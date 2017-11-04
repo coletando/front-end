@@ -1,0 +1,124 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (https://startbootstrap.com/template-overviews/4-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-4-col-portfolio/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+  background-color: #f0efee;
+  color: #969696;
+}
+
+h4 a{ /*nome do restaurante*/
+  color: #969696;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+hr{
+  border-color:#969696;
+  box-sizing: border-box;
+  width:100%;  
+}
+
+.row{
+  padding-top: 3%;
+}
+
+
+div.container-fluid {
+  margin-right: auto;
+  margin-left: 20%;
+  padding-left: 20%;
+  padding-right: 15px;
+  
+}
+
+.bg-dark {
+    background-color: #ffffff !important;
+}
+
+
+
+
+.card {
+  background-color: #fff;
+}
+.stars{
+  float: left;
+  
+}
+
+input.i1 {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+}
+
+label.l1 {
+  position: relative;
+  float: right;
+  color: #C8C8C8;
+}
+
+label.l1:before {
+  margin: 5px;
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.0em;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+input.i1:checked ~ label.l1:before {
+  color: #b9cb41;
+}
+
+label.l1:hover ~ label.l1:before {
+  color: #a1ab5d;
+}
+
+label.l1:hover:before {
+  color: #b9cb41;
+}
+
+
+/*input do search*/
+input[type=text] {
+    width: 61%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url(lupa.png);
+    
+    background-repeat: no-repeat;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+nav .container{
+  padding: 15px;
+}
