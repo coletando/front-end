@@ -24,6 +24,11 @@ h4 a{ /*nome do restaurante*/
   margin-bottom: 30px;
 }
 
+.submit-line i{
+  margin-top: 9px;
+  margin-right: 5px;
+}
+
 .pagination {
   margin-bottom: 30px;
 }
@@ -39,13 +44,6 @@ hr{
 }
 
 
-div.container-fluid {
-  margin-right: auto;
-  margin-left: 20%;
-  padding-left: 20%;
-  padding-right: 15px;
-  
-}
 
 .bg-dark {
     background-color: #ffffff !important;
@@ -103,22 +101,50 @@ label.l1:hover:before {
   color: #b9cb41;
 }
 
-
-/*input do search*/
-input[type=text] {
-    width: 61%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: white;
-    background-image: url(lupa.png);
-    
-    background-repeat: no-repeat;
-    
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #f0efee;
+    top: 0;
 }
+
+input[type=text] {
+  width: 61%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: white;
+}
+
 nav .container{
   padding: 15px;
+}
+.navbar img{
+  display: block;
+}
+.submit-line {
+  position: relative;
+  width: 700px;
+}
+
+.submit-line input {
+  width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .navbar img{
+    display: none !important;
+  }
+
+  .submit-line input[type=text] {
+    width: 100%;
+  }
+}
+.submit-lente {
+  position:absolute;
+  top:0; right:0;
+  z-index:10;
+  border:none;
+  background:transparent;
+  outline:none;
 }
