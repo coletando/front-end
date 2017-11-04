@@ -6,12 +6,17 @@
 
 body {
   padding-top: 54px;
+  background-color: black;
+  color: green;
+  font-family: 'Open Sans', sans-serif;
+}
+.corpo{
   background-color: #f0efee;
-  color: #969696;
 }
 
 h4 a{ /*nome do restaurante*/
   color: #969696;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -24,36 +29,35 @@ h4 a{ /*nome do restaurante*/
   margin-bottom: 30px;
 }
 
-.submit-line i{
-  margin-top: 9px;
-  margin-right: 5px;
-}
-
 .pagination {
   margin-bottom: 30px;
 }
 
-hr{
+hr{ /*linhas*/
   border-color:#969696;
   box-sizing: border-box;
   width:100%;  
+  font-family: 'Open Sans', sans-serif;
 }
 
 .row{
   padding-top: 3%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
 
-.bg-dark {
+.bg-dark { /*barra*/
     background-color: #ffffff !important;
+
 }
 
 
 
 
 .card {
-  background-color: #fff;
+  background-color: #ffffff;
+
 }
 .stars{
   float: left;
@@ -94,52 +98,43 @@ input.i1:checked ~ label.l1:before {
 }
 
 label.l1:hover ~ label.l1:before {
-  color: #a1ab5d;
+  color: #dddddd;
 }
 
 label.l1:hover:before {
   color: #b9cb41;
 }
 
-main {
-    width: 100%;
-    height: 100%;
-    background-color: #f0efee;
-    top: 0;
-}
 
+/*input do search*/
 input[type=text] {
-  width: 61%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  font-size: 14px;
-  background-color: white;
+    width: 61%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
-
 nav .container{
   padding: 15px;
+  background-color: #ffffff;
 }
 .navbar img{
   display: block;
 }
 .submit-line {
   position: relative;
-  width: 700px;
+  width: 70%;
 }
-
+.container{
+  background-color: #f0efee;
+}
 .submit-line input {
   width: 100%;
 }
-@media screen and (max-width: 960px) {
-  .navbar img{
-    display: none !important;
-  }
 
-  .submit-line input[type=text] {
-    width: 100%;
-  }
-}
 .submit-lente {
   position:absolute;
   top:0; right:0;
@@ -147,4 +142,39 @@ nav .container{
   border:none;
   background:transparent;
   outline:none;
+}
+
+.submit-lenteoculta {
+  position:absolute;
+  top:30%; right:0;
+  z-index:10;
+  border:none;
+  margin-right: 20%;
+  background:transparent;
+  display: none;
+}
+
+
+@media screen and (max-width: 770px) {
+  .submit-line {
+    display: none !important;
+  }
+
+  .submit-lenteoculta {
+    display: inline;
+  }
+  .row{
+    padding-top: 15%;
+  }
+}
+button.submit-lenteoculta:checked{
+
+}
+
+
+@media screen and (max-width: 416px) {
+
+  .row{
+    padding-top: 15%;
+  }
 }
